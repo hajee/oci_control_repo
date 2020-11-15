@@ -1,0 +1,23 @@
+---
+version: 5
+defaults:  # Used for any hierarchy level that omits these keys.
+  datadir: data         # This path is relative to hiera.yaml's directory.
+  data_hash: yaml_data       # Use the built-in YAML backend.
+
+hierarchy:
+  - name: "Per-node data"
+    paths: 
+      - "nodes/%{trusted.certname}.yaml"
+      - "nodes/%{hostname}.yaml" 
+
+  - name: "OCI-Compartment" 
+    path: "compartments/%{facts.oci_instance.metadata.compartment}.yaml"
+
+  - name: "Node type"
+    path: "node_type/%{facts.oci_instance.metadata.node_type}.yaml"
+
+  - name: "Deployment Zone"
+    path: "deployment_zones/%{facts.oci_instance.metadata.deployment_zone}.yaml"
+
+  - name: "Defaults"
+    path: "defaults.yaml"
