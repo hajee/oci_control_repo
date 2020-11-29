@@ -4,5 +4,5 @@
 class profile::oci_management()
 {
   echo {"Apply ${name}": withpath => false,}
-  require ::oci_profile::config
+  require ::oci_profile::configuration
 }
