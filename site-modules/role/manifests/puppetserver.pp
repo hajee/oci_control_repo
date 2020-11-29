@@ -4,5 +4,5 @@
 class role::puppetserver()
 {
   contain ::profile::base
-  contain ::oci_profile::config
+  contain ::profile::oci_management
 }
