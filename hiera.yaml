@@ -10,13 +10,13 @@ hierarchy:
       - "nodes/%{trusted.certname}.yaml"
       - "nodes/%{hostname}.yaml" 
 
-  - name: "OCI-Compartment" 
+  - name: "Hiera values specially for this OCI-Compartment" 
     path: "compartments/%{facts.oci_instance.metadata.compartment}.yaml"
 
-  - name: "Node type"
+  - name: "Hiera values specially for this Node type"
     path: "node_type/%{facts.oci_instance.metadata.node_type}.yaml"
 
-  - name: "Deployment Zone"
+  - name: "Hiera values specially for this Deployment Zone"
     path: "deployment_zones/%{facts.oci_instance.metadata.deployment_zone}.yaml"
 
   - name: "Defaults"
