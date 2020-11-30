@@ -52,8 +52,3 @@ mod 'enterprisemodules-wls_profile'
 #
 mod 'enterprisemodules-oci_config'
 mod 'enterprisemodules-oci_profile'
-#
-# ECMF
-#
-mod 'enterprisemodules-ecmf',
-    :git => 'https://github.com/enterprisemodules/ecmf.git'

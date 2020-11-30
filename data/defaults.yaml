@@ -1,28 +1,10 @@
 ---
 #
-# Use the puppet server as the source for downsloads for the Oracle and WebLogic software
+# Use the puppet server as the source for downloads for the Oracle and WebLogic software
 #
 ora_profile::database::source:                                            "http://%{puppet_server}:90/"
 wls_profile::source:                                                      "http://%{puppet_server}:90/"
 ibm_profile::source:                                                      "http://%{puppet_server}:90/"
-#
-#
-# Select here your  monitoring agent
-#
-ecmf::base::generic::monitoring:                skip  # No monitoring
-# ecmf::base::generic::monitoring:                ecmf::base::agent::monitoring::zabbix
-# ecmf::base::agent::monitoring::zabbix::server:  zabbix_server.example.com
-# ecmf::base::generic::monitoring:                ecmf::base::agent::monitoring::check_mk
-#
-# Use veeam as backup agent
-#
-# ecmf::base::generic::backup:                ecmf::base::agent::backup::veeam
-ecmf::base::generic::backup:                  skip
-#
-# No patching agent yet
-#
-ecmf::base::generic::patching:                skip
-#
 #
 #
 # Enter here your tenancy information
