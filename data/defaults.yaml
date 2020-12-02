@@ -8,13 +8,13 @@ ibm_profile::source:                                                      "http:
 #
 #
 # Enter here your tenancy information
-oci_profile::vm::tenant:                  your-tenant (root)
+oci_profile::vm::tenant:                  enterprisemodules (root)
 oci_profile::vm::region:                  eu-frankfurt-1
 oci_profile::vm::availability_domain:     arMl:EU-FRANKFURT-1-AD-1
-oci_profile::vm::subnet:                  My Subnet
-oci_profile::vm::puppetserver:            puppetserver.mysubnet.myvcn.oraclevcn.com
+oci_profile::vm::subnet:                  EM Public
+oci_profile::vm::puppetserver:            puppetserver-76131.em.vcn.oraclevcn.com
 oci_profile::vm::image:                   Oracle-Linux-7.8-2020.09.23-0
-oci_profile::vm::ssh_authorized_keys:     ssh-rsa your own key
+oci_profile::vm::ssh_authorized_keys:     ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCpYG7Fv2CHou3mgi4KAiaqY7J+BUKLfv1Ec9RtNjJJwEzoE3AbjSyDj8mUAkNBnO8UL7FIig45tcNyEbTdgx8N9EMQvtOkP1x+nZ6c1mEB6zSO7foRqzigxbhRgJEknRnTErujakjl2XIuxpl/I3E93lFGC8+TuAUCa37iRVkaCM/KF1nGgmcoVYMaFhcqkp+Ayrjo2UBEPlAjSBsxX9kUpbjTi6cm5KIz3Xkcvt6NUcUk+wIsZ+WeeZJXcCRZ9sfUjiufHssTbubDZZjOlnTMU4sggE3S8wBCL09mmCsbHL3NbbvIHWEMDkfMM999sYL3eIzZ9tE1mu1ApoAq4ADF hajee@Berts-MacBook-Pro.local
 oci_profile::vm::disk_defaults:           {}
 oci_profile::vm::instance_defaults:       {}
 
